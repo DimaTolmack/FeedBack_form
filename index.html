@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="JavaScript.js">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+	 <section>
+	<form name="form" id="form_message">
+		<h1>Напишите нам</h1>
+		<div class="inputBlock_user">
+			<label for="user">Ваше имя:</label> <input id="inputuser" name="name" type="text" data-reg="^[а-яА-ЯёЁa-zA-Z0-9]+$" placeholder="Иван" />
+		</div>
+		<div class="inputBlock_email">
+			<label for="email">Ваша почта:</label> <input id="inputemail" name="email" type="email" data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$" placeholder="admin@mail.ru" />
+		</div>
+		<div class="inputBlock_phone">
+			<label for="phone">Ваш телефон:</label> <input id="phone" name="phone" type="tel" data-reg="^(\+)?((\d{2,3}) ?\d|\d)(([ -]?\d)|( ?(\d{2,3}) ?)){5,12}\d$" maxlength="11" placeholder="8(555)-777-77-77" />
+		</div>
+		<div class="inputBlock_topic">
+			<label for="topic">Тема:</label>
+			<select name="topic" id="droplist">
+				<option value="#">Техподдержка</option>
+				<option value="#">Продажи</option>
+				<option value="#">Другое</option>
+				<option value="#">Еще один пункт</option>
+			</select>
+		</div>
+		<div class="message">
+			<label for="message">Ваше сообщение:</label><textarea name="message" cols="38" rows="7" id="message"></textarea>
+		</div>
+		<input id="button" value="Отправить письмо!" type="submit" name="button" />
+	</form>
+	</section>
+	<script src="JavaScript.js">
+	</script>
+</body>
+
+</html>
